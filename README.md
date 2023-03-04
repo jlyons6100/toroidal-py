@@ -1,2 +1,10 @@
 # toroidal-py
-Toroidal space game Python
+
+## Description:
+Toroidal space game in Python, leveraging pygame and pymunk
+
+## Ideas:
+
+Wrapped gameplay mechanics
+Gravity Wells
+Destructable ships? 
