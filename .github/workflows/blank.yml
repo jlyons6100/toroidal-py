@@ -19,7 +19,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Python flake8 Lint
+      - name: python-flake8
         # You may pin to the exact commit or the version.
-        uses: py-actions/flake8@v2.2.1
+        # uses: julianwachholz/flake8-action@75749239077651dfd0ecbe405899cdcb0673ee8f
+        uses: julianwachholz/flake8-action@v2.0.2
+        
+      - name: Mypy Check
+        # You may pin to the exact commit or the version.
+        # uses: jpetrucciani/mypy-check@f7a31184677eec02e0683cc0d31c5d5331d5ab5c
+        uses: jpetrucciani/mypy-check@0.991
+      
+         
+           
           
