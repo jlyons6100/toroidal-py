@@ -19,18 +19,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: python-flake8
-  # You may pin to the exact commit or the version.
-  # uses: julianwachholz/flake8-action@75749239077651dfd0ecbe405899cdcb0673ee8f
-        uses: julianwachholz/flake8-action@v2.0.2
-        with:
-          checkName: python-flake8
-      - name: mypy
+      - name: Python Linter
         # You may pin to the exact commit or the version.
-        # uses: sasanquaneuf/mypy-github-action@a3f3a66f97792cac0cfd11d3e5c87088e5c8f6a9
-        uses: sasanquaneuf/mypy-github-action@releases/v1.3
-        with:
-          # The name of the check to add annotations to. Generally the same as the job that uses this action
-          checkName: mypy
+        # uses: sunnysid3up/python-linter@93076bd8f740f062069291d738fc70c1b4171c1d
+        uses: sunnysid3up/python-linter@v0.1-beta.7
           
